@@ -9,7 +9,7 @@ function App() {
     <>
       <div>
         <a href="https://eclipsesdev.my.id" target="_blank">
-          <img src={`${import.meta.env.BASE_URL}${reactLogo}`} className="logo eclipsesdev" alt="Eclipses Development Logo" />
+          <img src={reactLogo} className="logo eclipsesdev" alt="Eclipses Development Logo" />
         </a>
       </div>
       <h1>Eclipses Development</h1>
