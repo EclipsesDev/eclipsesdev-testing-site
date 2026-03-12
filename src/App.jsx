@@ -26,7 +26,7 @@ function App() {
           This is a simple React website made by @EclipsesDev. For testing only.
         </p>
       </div>
-      <p className="read-the-docs">
+      <p className="information">
         Click on the logo to visit main website.
       </p>
     </>
