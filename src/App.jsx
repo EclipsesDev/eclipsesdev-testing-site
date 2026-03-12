@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import reactLogo from './assets/eclipsesdev.svg'
+import eclipsesLogo from './assets/eclipsesdev.png'
 import './App.css'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <>
       <div>
         <a href="https://eclipsesdev.my.id" target="_blank">
-          <img src={reactLogo} className="logo eclipsesdev" alt="Eclipses Development Logo" />
+          <img src={eclipsesLogo} className="logo eclipsesdev" alt="Eclipses Development Logo" />
         </a>
       </div>
       <h1>Eclipses Development</h1>
