@@ -1,36 +1,12 @@
-import { useState } from 'react'
-import eclipsesLogo from './assets/eclipsesdev.png'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx";
+import CalculatorPage from "./pages/Calculator.jsx";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://eclipsesdev.my.id" target="_blank">
-          <img src={eclipsesLogo} className="logo eclipsesdev" alt="Eclipses Development Logo" />
-        </a>
-      </div>
-      <h1>Eclipses Development</h1>
-      <div className="card">
-        <div id="counter">Counter: {count}</div>
-
-        <button onClick={() => setCount((count) => count + 1)}>
-          add
-        </button>
-        <button onClick={() => setCount((count) => count - 1)}>
-          subtract
-        </button>
-        <p>
-          This is a simple React website made by @EclipsesDev. For testing only.
-        </p>
-      </div>
-      <p className="information">
-        Click on the logo to visit main website.
-      </p>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/calculator" element={<CalculatorPage />} />
+    </Routes>
+  );
 }
-
-export default App
